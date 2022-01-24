@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/*共通部分
+------------------------------*/
+html {
+    font-size: 100%;
+}
+body {
+    background-image: url(./images/img_1897.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    color: #484848;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.wrapper {
+    background: #ffffff;
+    border-radius: 6px;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    box-shadow: 15px 15px 0px rgba(0,0,0,.1);
+}
+.errors {
+    color: #ed2222;
+    background-color: #f0cdcd;
+    list-style: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+.title {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.sub-title {
+    text-align: center;
+    margin-bottom: 12px;
+}
+/* フォーム 
+-----------------------*/
+label {
+    display: block;
+    margin: 10px 0px;
+}
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+    display: block;
+    width: 100%;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #999999;
+}
+input:focus {
+    outline: none;
+}
+.btn-area {
+    margin-top: 30px;
+}
+.btn {
+    width: 100%;
+    color: #ffffff;
+    font-size: 1.2em;
+    letter-spacing: 0.5rem;
+    text-indent: 0.5rem;
+    border: none;
+    border-radius: 6px;
+    text-shadow: 1px 1px 0px rgba(0,0,0,.1);
+    padding: 20px;
+    cursor: pointer;
+}
+.submit-btn {
+    background-color: #ec008c;
+    margin-bottom: 15px;
+}
+.done-btn,
+.edit-btn,
+.delete-btn,
+.end-btn {
+    font-size: 1rem;
+    padding: 5px;
+}
+.done-btn{
+background-color: darkcyan;
+}
+.edit-btn {
+background-color: darkorange;
+}
+.delete-btn {
+    background-color: darkred;
+}
+.end-btn {
+    background-color: deeppink;
+}
+.submit-btn:hover {
+    background-color: #f93dae;
+}
+.link-btn,
+.log-out-btn {
+    display: block;
+    text-align: center;
+}
+.link-btn {
+    background-color: #000000;
+}
+.link-btn:hover {
+    background-color: #4f4e4e;
+}
+.log-out-btn {
+    background-color: #00aeef;
+}
+.log-out-btn:hover {
+    background-color: #33c5fa;
+}
+
+/* 会員限定画面
+-----------------------*/
+.info {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #f26964;
+}
+/* タスク一覧画面 
+-----------------------*/
+
+/* タスク登録フォーム */
+.new-task {
+    margin-bottom: 60px;
+}
+
+/* 未完了タスク一覧 */
+.notyet-task {
+    margin-bottom: 60px;
+}
+.notyet-task h2 {
+    background: linear-gradient(transparent 70%, #fee9a4 70%);
+}
+
+/* 完了タスク一覧 */
+.done-task {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.done-task h2 {
+    background: linear-gradient(transparent 70%, #edbbfa 70%);
+}
